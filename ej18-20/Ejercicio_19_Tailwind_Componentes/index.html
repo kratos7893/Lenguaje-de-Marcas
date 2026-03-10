@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 19: Componentes Complejos - Inmobiliaria</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 p-10 flex items-center justify-center min-h-screen font-sans">
+
+    <div class="max-w-sm bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-500 group">
+        
+        <div class="relative overflow-hidden">
+            <img class="w-full h-56 object-cover transform group-hover:scale-110 transition-transform duration-500"
+                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                alt="Casa Moderna">
+            
+            <div class="absolute top-3 right-3 bg-blue-600 text-white text-[10px] tracking-widest font-black px-3 py-1 rounded-full shadow-lg">
+                EN VENTA
+            </div>
+            
+            <div class="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-lg shadow-sm">
+                <span class="text-lg font-bold text-gray-900">$450,000</span>
+            </div>
+        </div>
+
+        <div class="p-6">
+            <div class="flex justify-between items-start mb-3">
+                <div>
+                    <p class="text-xs font-semibold text-blue-500 uppercase tracking-wider mb-1">Apartamento de Lujo</p>
+                    <h3 class="text-xl font-bold text-gray-900 truncate w-64">Residencial Los Olivos</h3>
+                </div>
+            </div>
+
+            <div class="flex items-center text-gray-500 mb-5">
+                <span class="material-icons text-sm mr-1">place</span>
+                <p class="text-sm">Av. Principal 123, Madrid</p>
+            </div>
+
+            <div class="flex items-center justify-between text-sm text-gray-600 mb-6 py-3 border-y border-gray-100">
+                <div class="flex items-center gap-1">
+                    <span class="material-icons text-gray-400 text-lg">bed</span>
+                    <span class="font-medium">3</span> <span class="text-gray-400">Habs</span>
+                </div>
+                <div class="flex items-center gap-1">
+                    <span class="material-icons text-gray-400 text-lg">bathtub</span>
+                    <span class="font-medium">2</span> <span class="text-gray-400">Baños</span>
+                </div>
+                <div class="flex items-center gap-1">
+                    <span class="material-icons text-gray-400 text-lg">square_foot</span>
+                    <span class="font-medium">120</span> <span class="text-gray-400">m²</span>
+                </div>
+            </div>
+
+            <div class="flex gap-3">
+                <button class="flex-2 bg-gray-900 text-white font-bold py-3 px-6 rounded-xl hover:bg-blue-700 active:scale-95 transition-all duration-200 cursor-pointer shadow-lg shadow-gray-200">
+                    Contactar
+                </button>
+                
+                <button class="flex-1 flex items-center justify-center border border-gray-200 rounded-xl text-gray-400 hover:text-red-500 hover:border-red-200 hover:bg-red-50 active:scale-90 transition-all duration-200 cursor-pointer">
+                    <span class="material-icons">favorite_border</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
