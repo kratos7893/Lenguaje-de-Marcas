@@ -1,0 +1,52 @@
+/* Ejercicio 23: SASS Introducción
+*/
+
+// 1. Define Variables ($)
+$color-principal: #3498db;
+$color-oscuro: #2c3e50;
+$fuente-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$espaciado: 20px;
+
+// 2. Usa Nesting para organizar el código
+body {
+    font-family: $fuente-main;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: $espaciado;
+    background: white;
+    text-align: center;
+    border-radius: 8px;
+
+    // Nesting: Esto equivale a .container h1
+    h1 {
+        color: $color-principal;
+        margin-bottom: 10px;
+    }
+
+    // Nesting: Esto equivale a .container p
+    p {
+        color: #666;
+        line-height: 1.6;
+    }
+
+    // Estilo para el botón dentro del contenedor
+    .btn {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 25px;
+        background-color: $color-principal;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+
+        // Uso del selector padre (&) para el hover
+        &:hover {
+            background-color: $color-oscuro;
+        }
+    }
+}
